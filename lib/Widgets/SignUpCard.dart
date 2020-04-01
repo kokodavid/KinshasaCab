@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class FormCard extends StatelessWidget {
+class SignUpCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
       width: double.infinity,
-      height: ScreenUtil.getInstance().setHeight(500),
+      height: ScreenUtil.getInstance().setHeight(900),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(8.0),
@@ -26,7 +26,7 @@ class FormCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("SIGNU[",
+            Text("SIGNUP",
                 style: TextStyle(
                     fontSize: ScreenUtil.getInstance().setSp(45),
                     fontFamily: "Poppins",
@@ -59,6 +59,26 @@ class FormCard extends StatelessWidget {
             SizedBox(
               height: ScreenUtil.getInstance().setHeight(35),
             ),
+            Text("Password",
+                style: TextStyle(
+                    fontFamily: "Poppins",
+                    fontSize: ScreenUtil.getInstance().setSp(26))),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                  hintText: "Password",
+                  hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
+            ),
+            Text("Password",
+                style: TextStyle(
+                    fontFamily: "Poppins",
+                    fontSize: ScreenUtil.getInstance().setSp(26))),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                  hintText: "Password",
+                  hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
@@ -71,6 +91,7 @@ class FormCard extends StatelessWidget {
                 )
               ],
             )
+
           ],
         ),
       ),
