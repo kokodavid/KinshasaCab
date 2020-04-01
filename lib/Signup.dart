@@ -123,7 +123,7 @@ class _MyAppState extends State<MyApp> {
                             child: InkWell(
                               onTap: () {},
                               child: Center(
-                                child: Text("SIGNIN",
+                                child: Text("SIGNUP",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontFamily: "Poppins-Bold",
@@ -144,12 +144,12 @@ class _MyAppState extends State<MyApp> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        "New User? ",
+                        "Already have an Account ? ",
                         style: TextStyle(fontFamily: "Poppins-Medium"),
                       ),
                       InkWell(
                         onTap: () {},
-                        child: Text("SignUp",
+                        child: Text("Login",
                             style: TextStyle(
                                 color: Color(0xFF5d74e3),
                                 fontFamily: "Poppins-Bold")),
