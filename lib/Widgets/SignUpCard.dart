@@ -40,33 +40,39 @@ class SignUpCard extends StatelessWidget {
                     fontSize: ScreenUtil.getInstance().setSp(26))),
             TextField(
               decoration: InputDecoration(
-                  hintText: "username",
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             SizedBox(
               height: ScreenUtil.getInstance().setHeight(30),
             ),
-            Text("Password",
+            Text("Full Names",
                 style: TextStyle(
                     fontFamily: "Poppins",
                     fontSize: ScreenUtil.getInstance().setSp(26))),
             TextField(
               obscureText: true,
               decoration: InputDecoration(
-                  hintText: "Password",
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             SizedBox(
               height: ScreenUtil.getInstance().setHeight(35),
             ),
-            Text("Password",
+            Text("Email",
                 style: TextStyle(
                     fontFamily: "Poppins",
                     fontSize: ScreenUtil.getInstance().setSp(26))),
             TextField(
               obscureText: true,
               decoration: InputDecoration(
-                  hintText: "Password",
+                  hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
+            ),
+            Text("Phone",
+                style: TextStyle(
+                    fontFamily: "Poppins",
+                    fontSize: ScreenUtil.getInstance().setSp(26))),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             Text("Password",
@@ -76,7 +82,6 @@ class SignUpCard extends StatelessWidget {
             TextField(
               obscureText: true,
               decoration: InputDecoration(
-                  hintText: "Password",
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
             ),
             Row(
